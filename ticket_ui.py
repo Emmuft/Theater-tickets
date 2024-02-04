@@ -1,0 +1,127 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
+
+
+class Ticket(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(950, 335)
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(10, 10, 911, 321))
+        self.widget.setObjectName("widget")
+        self.label = QtWidgets.QLabel(self.widget)
+        self.label.setGeometry(QtCore.QRect(0, 10, 911, 301))
+        self.label.setStyleSheet("border-image: url(:/newPrefix/000_ticket_creative_movie_tickets.jpeg);")
+        self.label.setText("")
+        self.label.setObjectName("label")
+        self.organisattick = QtWidgets.QLabel(self.widget)
+        self.organisattick.setGeometry(QtCore.QRect(70, 120, 191, 31))
+        self.organisattick.setStyleSheet("font: 14pt \"Times New Roman\";")
+        self.organisattick.setText("")
+        self.organisattick.setObjectName("organisattick")
+        self.placetic = QtWidgets.QLabel(self.widget)
+        self.placetic.setGeometry(QtCore.QRect(60, 180, 191, 31))
+        self.placetic.setStyleSheet("font: 14pt \"Times New Roman\";")
+        self.placetic.setText("")
+        self.placetic.setObjectName("placetic")
+        self.pracetic = QtWidgets.QLabel(self.widget)
+        self.pracetic.setGeometry(QtCore.QRect(60, 250, 191, 31))
+        self.pracetic.setStyleSheet("font: 14pt \"Times New Roman\";")
+        self.pracetic.setText("")
+        self.pracetic.setObjectName("pracetic")
+        self.fiotic = QtWidgets.QLabel(self.widget)
+        self.fiotic.setGeometry(QtCore.QRect(300, 110, 321, 31))
+        self.fiotic.setStyleSheet("font: 10pt \"Times New Roman\";")
+        self.fiotic.setText("")
+        self.fiotic.setObjectName("fiotic")
+        self.numbertic = QtWidgets.QLabel(self.widget)
+        self.numbertic.setGeometry(QtCore.QRect(310, 180, 201, 31))
+        self.numbertic.setStyleSheet("font: 14pt \"Times New Roman\";")
+        self.numbertic.setText("")
+        self.numbertic.setObjectName("numbertic")
+        self.pushButton = QtWidgets.QPushButton(self.widget)
+        self.pushButton.setGeometry(QtCore.QRect(870, 20, 31, 28))
+        self.pushButton.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);")
+        self.pushButton.setObjectName("pushButton")
+        self.saveticket = QtWidgets.QPushButton(self.widget)
+        self.saveticket.setGeometry(QtCore.QRect(450, 250, 41, 41))
+        self.saveticket.setStyleSheet("border-image: url(:/newPrefix/free-icon-downloading-data-5699997.png);")
+        self.saveticket.setText("")
+        self.saveticket.setObjectName("saveticket")
+        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2.setGeometry(QtCore.QRect(310, 250, 141, 41))
+        self.label_2.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";\n"
+"text-decoration: underline;")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.widget)
+        self.label_3.setGeometry(QtCore.QRect(670, 50, 211, 211))
+        self.label_3.setStyleSheet("border-image: url(:/newPrefix/Снимок экрана 2023-11-18 222048.png);")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.label_13 = QtWidgets.QLabel(self.widget)
+        self.label_13.setGeometry(QtCore.QRect(-10, 10, 941, 20))
+        self.label_13.setStyleSheet("border-top: 1px solid #000000;\n"
+"border-radius: 5px;\n"
+"")
+        self.label_13.setText("")
+        self.label_13.setObjectName("label_13")
+        self.label_18 = QtWidgets.QLabel(self.widget)
+        self.label_18.setGeometry(QtCore.QRect(-10, 310, 941, 20))
+        self.label_18.setStyleSheet("border-top: 1px solid #000000;\n"
+"border-radius: 5px;\n"
+"")
+        self.label_18.setText("")
+        self.label_18.setObjectName("label_18")
+        self.label_19 = QtWidgets.QLabel(self.widget)
+        self.label_19.setGeometry(QtCore.QRect(0, 10, 941, 301))
+        self.label_19.setStyleSheet("border-left: 1px solid #000000;\n"
+"border-radius: 5px;\n"
+"")
+        self.label_19.setText("")
+        self.label_19.setObjectName("label_19")
+        self.label_20 = QtWidgets.QLabel(self.widget)
+        self.label_20.setGeometry(QtCore.QRect(-20, 10, 931, 301))
+        self.label_20.setStyleSheet("border-right: 1px solid #000000;\n"
+"border-radius: 5px;\n"
+"")
+        self.label_20.setText("")
+        self.label_20.setObjectName("label_20")
+        self.label_4 = QtWidgets.QLabel(self.widget)
+        self.label_4.setGeometry(QtCore.QRect(310, 280, 141, 16))
+        self.label_4.setStyleSheet("color: rgb(0, 0, 127);")
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.label.raise_()
+        self.organisattick.raise_()
+        self.placetic.raise_()
+        self.pracetic.raise_()
+        self.fiotic.raise_()
+        self.numbertic.raise_()
+        self.label_2.raise_()
+        self.label_3.raise_()
+        self.label_13.raise_()
+        self.label_18.raise_()
+        self.label_19.raise_()
+        self.label_20.raise_()
+        self.pushButton.raise_()
+        self.saveticket.raise_()
+        self.label_4.raise_()
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.pushButton.setText(_translate("Form", "X"))
+        self.label_2.setText(_translate("Form", "Сохранить билет"))
+import ticket_rc
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QMainWindow()
+    ui = Form
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())

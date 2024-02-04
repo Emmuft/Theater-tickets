@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="profile_btn">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>20</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#profile_btn {
+ font: 16pt &quot;Arial&quot;;
+ border: 1px solid #bfbfbf;
+ background-color: rgb(255, 255, 255);
+ border-radius: 4px;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+QPushButton#profile_btn span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+QPushButton#profile_btn:hover, #profile_btn:hover {
+	background-color: rgb(231, 231, 231);
+}</string>
+   </property>
+   <property name="text">
+    <string>Профиль</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="zakazi_btn">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>20</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#zakazi_btn {
+ font: 16pt &quot;Arial&quot;;
+ border: 1px solid #bfbfbf;
+ background-color: rgb(255, 255, 255);
+ border-radius: 4px;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+QPushButton#zakazi_btn span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+QPushButton#zakazi_btn:hover, #zakazi_btn:hover {
+		background-color: rgb(199, 199, 199);
+}</string>
+   </property>
+   <property name="text">
+    <string>Заказы</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="afisha_btn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>201</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#afisha_btn {
+ font: 16pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(255, 255, 255);
+ border: 1px solid #bfbfbf;
+ border-radius: 4px;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+QPushButton#afisha_btn span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+QPushButton#afisha_btn:hover, #afisha_btn:hover {
+		background-color: rgb(231, 231, 231);
+}</string>
+   </property>
+   <property name="text">
+    <string>Купить билет</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="onas_btn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#onas_btn {
+ font: 16pt &quot;MS Shell Dlg 2&quot;;
+ border: 1px solid #bfbfbf;
+background-color: rgb(255, 255, 255);
+ border-radius: 4px;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+QPushButton#onas_btn span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+QPushButton#onas_btn:hover, #onas_btn:hover {
+	background-color: rgb(231, 231, 231);
+}</string>
+   </property>
+   <property name="text">
+    <string>О нас</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;
+
+
+</string>
+   </property>
+   <property name="text">
+    <string>Личная информация</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name_line">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>230</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+background-color: rgb(229, 229, 229);
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>Имя</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="surname_line">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>320</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+background-color: rgb(229, 229, 229);
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>Фамилия</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="patronymic_line">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>410</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+background-color: rgb(229, 229, 229);
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>Отчество</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="notspecified_radioButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>598</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-radius:1px;
+color: rgb(0, 0, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Не указан</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>560</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Пол</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="woman_radioButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>596</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-radius:1px;
+color: rgb(0, 0, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Жен.</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="man_radioButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>602</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+border-radius:1px;
+color: rgb(0, 0, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Муж.</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="happy_line">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>500</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+background-color: rgb(229, 229, 229);
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>День рождения</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>90</y>
+     <width>1011</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>-26</x>
+     <y>-5</y>
+     <width>1001</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(229, 229, 229);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>120</y>
+     <width>391</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+   </property>
+   <property name="text">
+    <string>Контактная информация</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="number_line">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>230</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+background-color: rgb(229, 229, 229);
+</string>
+   </property>
+   <property name="placeholderText">
+    <string>Мобильный телефон</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="email_lineprofile">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>320</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:8px;
+background-color: rgb(229, 229, 229);
+</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+   <property name="placeholderText">
+    <string>Электронная почта</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>331</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom: 1px solid #bfbfbf;
+border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>110</y>
+     <width>381</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom: 1px solid #bfbfbf;
+border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>210</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom: 1px solid #bfbfbf;
+border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>210</y>
+     <width>301</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom: 1px solid #bfbfbf;
+border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom: 1px solid #bfbfbf;
+border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>380</y>
+     <width>281</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-bottom: 1px solid #bfbfbf;
+border-radius: 0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="savebutton">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>590</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#savebutton {
+ font: 16pt &quot;Arial&quot;;
+ border: 1px solid #bfbfbf;
+ background-color: rgb(255, 255, 255);
+ border-radius: 4px;
+ padding: 0.8em 1.2em 0.8em 1em;
+ transition: all ease-in-out 0.2s;
+ font-size: 16px;
+}
+
+QPushButton#savebutton span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: 600;
+}
+
+QPushButton#savebutton:hover, #savebutton:hover {
+		background-color: rgb(199, 199, 199);
+}</string>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </widget>
+  <zorder>label_7</zorder>
+  <zorder>label_14</zorder>
+  <zorder>label_13</zorder>
+  <zorder>label_15</zorder>
+  <zorder>label_12</zorder>
+  <zorder>label_8</zorder>
+  <zorder>profile_btn</zorder>
+  <zorder>zakazi_btn</zorder>
+  <zorder>afisha_btn</zorder>
+  <zorder>onas_btn</zorder>
+  <zorder>label</zorder>
+  <zorder>name_line</zorder>
+  <zorder>surname_line</zorder>
+  <zorder>patronymic_line</zorder>
+  <zorder>notspecified_radioButton</zorder>
+  <zorder>label_5</zorder>
+  <zorder>woman_radioButton</zorder>
+  <zorder>man_radioButton</zorder>
+  <zorder>happy_line</zorder>
+  <zorder>label_9</zorder>
+  <zorder>number_line</zorder>
+  <zorder>email_lineprofile</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_10</zorder>
+  <zorder>savebutton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
